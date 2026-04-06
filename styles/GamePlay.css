@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0c0000;
+    background-image: url("../images/website background png.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    color: #e0e0e0;
+    font-family: "manga";
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.main-header {
+    background: black;
+    padding: 20px;
+    border-bottom: 2px solid #5a0000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    position: relative;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    list-style: none;
+    display: none;
+    min-width: 150px;
+}
+
+.dropdown li {
+    margin: 0;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 15px;
+}
+
+.dropdown a:hover {
+    background: #5a0000;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.gif-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.gif-box {
+    display: block;
+    width: 100%;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.gif-box img {
+    width: 90vw;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.content-box {
+    background: rgba(43, 5, 5, 0.6);
+    padding: 25px;
+    margin-top: 30px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 4px solid #a30000;
+}
+
+h2 {
+    font-family: 'manga-bold';
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.logoPng img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+@font-face {
+    font-family: 'manga';
+    src: url(manga_speak.ttf);
+}
+
+@font-face {
+    font-family: 'manga-bold';
+    src: url(manga_speak_bold.ttf);
+}
