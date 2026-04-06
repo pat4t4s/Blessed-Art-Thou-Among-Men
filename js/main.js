@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load GLTF
     let objectPivot;
     const loader = new GLTFLoader();
-    loader.load("https://pat4t4s.github.io/scene/webScene.gltf", (gltf) => {
+    loader.load("../scene/webScene.gltf", (gltf) => {
         const object = gltf.scene;
 
         const box = new THREE.Box3().setFromObject(object);
