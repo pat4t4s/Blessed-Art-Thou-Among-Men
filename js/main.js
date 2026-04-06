@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load GLTF
     let objectPivot;
     const loader = new GLTFLoader();
-    loader.load("./Blessed-Art-Thou-Among-Men/scene/webScene.gltf", (gltf) => {
+    loader.load("/Blessed-Art-Thou-Among-Men/scene/webScene.gltf", (gltf) => {
         const object = gltf.scene;
 
         const box = new THREE.Box3().setFromObject(object);
