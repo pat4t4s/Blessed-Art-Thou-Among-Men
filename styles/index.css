@@ -107,7 +107,7 @@ nav ul li:hover .dropdown {
     position: absolute;
     bottom: 20%;
     right: 20%;
-    width: 1000px;
+    width: 800px;
     max-width: 80vw;
     height: auto;
     pointer-events: none;
