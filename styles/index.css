@@ -60,37 +60,6 @@ li a {
     min-width: 150px;
 }
 
-.hero-video {
-    width: 200%;
-    height: 100vh;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#container3D {
-    width: 100%;
-    height: 100%;
-}
-
-.overlay-image {
-    position: absolute;
-    top: 40%;
-    right: 200px;
-    transform: translateY(-50%);
-    width: 1000px;
-    pointer-events: none;
-    z-index: 10;
-}
-
-a {
-    text-decoration: none;
-}
-
 .dropdown li {
     margin: 0;
 }
@@ -108,6 +77,46 @@ a {
 
 nav ul li:hover .dropdown {
     display: block;
+}
+
+.hero-video {
+    width: 100%;
+    height: 60vh;
+    max-height: 800px;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container3D {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    max-width: 300px;
+    height: auto;
+    pointer-events: none;
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .hero-video {
+        height: 40vh;
+    }
+
+    .overlay-image {
+        width: 40%;
+        max-width: 200px;
+    }
 }
 
 .content-box {
@@ -146,7 +155,8 @@ h2 {
     margin-bottom: 20px;
 }
 
-.img-box {
+.img-box,
+.img-box2 {
     width: 100%;
     max-width: 220px;
     aspect-ratio: 1 / 1;
@@ -156,7 +166,8 @@ h2 {
     transition: 0.4s ease;
 }
 
-.img-box img {
+.img-box img,
+.img-box2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -234,20 +245,6 @@ h2 {
     src: url(manga_speak.ttf);
 }
 
-.img-box2 {
-    width: 100%;
-    max-width: 220px;
-    aspect-ratio: 1 / 1;
-    margin: auto;
-    background: #000;
-    border: 1px solid #444;
-    transition: 0.4s ease;
-}
-
-.img-box2 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: 0.4s ease;
+a {
+    text-decoration: none;
 }
