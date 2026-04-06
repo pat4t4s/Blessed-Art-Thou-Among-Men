@@ -105,8 +105,8 @@ nav ul li:hover .dropdown {
 
 .overlay-image {
     position: absolute;
-    bottom: 20%;
-    right: 20%;
+    bottom: 80%;
+    right: 80%;
     width: 1000px;
     max-width: 80vw;
     height: auto;
