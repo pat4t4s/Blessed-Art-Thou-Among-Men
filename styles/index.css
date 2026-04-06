@@ -80,7 +80,7 @@ nav ul li:hover .dropdown {
 }
 
 .hero-video {
-    width: 140vw;
+    width: 100vw;
     height: 90vh;
     max-height: 1200px;
     min-height: 500px;
