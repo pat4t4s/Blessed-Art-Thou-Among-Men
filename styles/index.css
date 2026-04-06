@@ -101,8 +101,8 @@ nav ul li:hover .dropdown {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 25%;
-    max-width: 300px;
+    width: 300px;
+    max-width: 25vw;
     height: auto;
     pointer-events: none;
     z-index: 10;
@@ -114,8 +114,8 @@ nav ul li:hover .dropdown {
     }
 
     .overlay-image {
-        width: 40%;
-        max-width: 200px;
+        width: 150px;
+        max-width: 40vw;
     }
 }
 
